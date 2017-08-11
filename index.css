@@ -1,0 +1,70 @@
+/* --- HIDDEN ---------------------------------------------------------------- HIDDEN ---- */
+/*p { visibility: hidden;}*/
+:root {
+  --color-1: #011501;
+  --color-2: #0F4C0F;
+  --color-3: #2F872F;
+  --color-4: #6BC86B;
+  --color-5: #AAF0AA;
+
+  --fontSize: 64px;
+
+  --body-background: var(--color-4);
+  --body-font: var(--color-1);
+  --input-background: var(--color-5);
+}
+html {
+  font-size: var(--fontSize);
+  text-align: center;
+}
+body {
+  font-family: -apple-system, BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Neue,sans-serif;
+  color: var(--color-h1);
+  margin: auto 50px;
+  padding: 0px;
+
+  color: var(--body-font);
+  background-color: var(--body-background);
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style-type: none;
+}
+input, label {display: block;}
+input {
+  width: 70%;
+  margin: 30px auto;
+  font-size: var(--fontSize);
+}
+input[type=text] {
+  background-color: var(--input-background);
+  padding: 30px;
+  border-bottom-left-radius: 2px;
+}
+input ::placeholder {
+  color: var(--color-2);
+}
+audio {
+  width: 80%;
+  height: 100px;
+}
+.stage {
+  visibility: hidden;
+}
+#test {
+  font-family: Italianno;
+  font-size: 3rem;
+  line-height: 2rem;
+  visibility: hidden;
+}
+#screenSize {
+  background-color: black;
+  color: grey;
+  margin: 0px -50px 0px -50px;
+}
+#screenSize {display: none;}
+#screenSize p {
+  margin: 0px;
+}

@@ -1,0 +1,22 @@
+{
+  "name": "kakog.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "dev": "C:/Users/dtg/projects/kakog.github.io/node_modules/.bin/live-server.cmd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kakog/kakog.github.io.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kakog/kakog.github.io/issues"
+  },
+  "homepage": "https://github.com/kakog/kakog.github.io#readme",
+  "devDependencies": {
+    "live-server": "^1.2.0"
+  }
+}

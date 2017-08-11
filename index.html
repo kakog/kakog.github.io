@@ -4,123 +4,39 @@
     <meta charset="utf-8">
     <title></title>
     <link href="https://fonts.googleapis.com/css?family=Italianno&effect=3d-float" rel="stylesheet">
-    <script type="text/javascript">
-      // inputID: id of the input field to check
-      // nextStageID: hidden block id
-      // i: index of the string to type to change visibility of hidden block nextStageID to "visible"
-      const passArray = [0];
-      const checkPoint = ( inputID, i, nextStageID ) => {
-        if ( document.getElementById(inputID).value === passArray[i].toString() ) {
-          document.getElementById(nextStageID).style.visibility = "visible";
-        }
-      };
-
-
-      // ----  READ !!
-      // ----  Function above is just for testing purposes, the one below is the right one
-      // const passArray = ['Kogutowicz'];
-      // const checkPoint = ( inputID, i, nextStageID ) => {
-      //   if ( document.getElementById(inputID).value === passArray[i] ) {
-      //     document.getElementById(nextStageID).style.visibility = "visible";
-      //   }
-      // };
-
-      // You can use onscroll event on <body> tag to call a function
-      // each time scrolls:
-      //  <body onscroll="Onscrollfnction();">
-      const Onscrollfnction = () => {
-          alert("scroll");
-      };
-      const myFunction = () => {
-        // Get node
-        let screenSizeDiv = document.getElementById('screenSize')
-        // Remove all childs within the node
-        while (screenSize.firstChild) {screenSize.removeChild(screenSize.firstChild);}
-        // Create new node content
-        let dims = document.createElement('p');
-        dims.appendChild(document.createTextNode("w = " + window.innerWidth + "px"));
-        dims.appendChild(document.createElement('br'));
-        dims.appendChild(document.createTextNode("h = " + window.innerHeight + "px"));
-        // Add content to the node
-        screenSizeDiv.appendChild(dims);
-        // Set node style
-        screenSizeDiv.style.fontSize = '100%';
-      }
-    </script>
-    <style>
-      html{font-size:200%;}
-      :root {
-        --color-1: #011501;
-        --color-2: #0F4C0F;
-        --color-3: #2F872F;
-        --color-4: #6BC86B;
-        --color-5: #AAF0AA;
-
-        /*--body-background: var(--color-4);*/
-        --body-font: var(--color-1);
-        --input-background: var(--color-5);
-      }
-      body {
-        font-family: -apple-system, BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica,Neue,sans-serif;
-        color: var(--color-h1);
-        margin: 0px;
-        padding: 0px;
-
-        color: var(--body-font);
-        background-color: var(--body-background);
-      }
-      ul {
-        padding: 0;
-      }
-      li {
-        list-style-type: none;
-      }
-      input[type=text] {
-        background-color: var(--input-background);
-        padding: 8px;
-        border-bottom-left-radius: 2px;
-      }
-      ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-        color: pink;
-      }
-      ::-moz-placeholder { /* Firefox 19+ */
-        color: pink;
-      }
-      :-ms-input-placeholder { /* IE 10+ */
-        color: pink;
-      }
-      :-moz-placeholder { /* Firefox 18- */
-        color: pink;
-      }
-      input ::placeholder {
-        color: var(--color-2);
-      }
-      .stage {
-        visibility: hidden;
-      }
-      #test {
-        font-family: Italianno;
-        font-size: 3rem;
-        line-height: 2rem;
-        visibility: hidden;
-      }
-      /* --- HIDDEN ---------------------------------------------------------------- HIDDEN ---- */
-      /*p { visibility: hidden;}*/
-    </style>
+    <link rel="stylesheet" type="text/css" href="index.css">
   </head>
    <body onload="myFunction()" onresize="myFunction()">
     <div id="screenSize"></div>
+    <div>
+    </div>
     <p>
-      Moja droga,
+      Hi nasz droga!
+      <br>
+      =D
     </p>
     <p>
-      Last year we had fun looking for your present around our house. This year I want to try a multi-language version.
+      Last year we had fun looking for your present around our house.
+      This year I want to try a better version
     </p>
     <p>
       and I have decided to build this website exclusivelly to guide you ;)
     </p>
     <p>
+      ...
+      <br>
+      <br>
       Are you ready?
+      
+      <br>
+      <br>
+      <br>
+      <br>
+      ...
+      <br>
+      <br>
+      <br>
+      <br>
     </p>
     <p>
       <label>Type your surname below to start!</label>
@@ -129,9 +45,20 @@
         placeholder="Kowalski"
         onkeyup="checkPoint('checkPoint1', 0, 'stage1')"
       />
+      <br><br><br><br><br><br>
     </p>
     <div id="stage1" class="stage">
+      Well done!
+      <br><br>
+      Let's continue!
+    </div>
+     <audio controls>
+      <source src="audio-test.ogg" type="audio/ogg">
+      Your browser does not support the audio element.
+    </audio> 
+    <div id="stage10" class="stage">
       Teraz będziesz w stanie poczuć się jak księżniczka nawet w najciemniejszym pomieszczeniu
     </div>
+    <script type="text/javascript" src="index.js"></script>
   </body>
 </html>

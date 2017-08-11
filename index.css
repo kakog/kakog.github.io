@@ -1,5 +1,3 @@
-/* --- HIDDEN ---------------------------------------------------------------- HIDDEN ---- */
-/*p { visibility: hidden;}*/
 :root {
   --color-1: #011501;
   --color-2: #0F4C0F;
@@ -46,12 +44,49 @@ input[type=text] {
 input ::placeholder {
   color: var(--color-2);
 }
-audio {
-  width: 80%;
-  height: 100px;
+
+/* --- AUDIO PLAYER --------------------------------------- */
+#audioplayer{
+  width: 480px;
+  height: 60px;
+  margin: 50px auto auto auto;
+  border: solid;
 }
+#pButton{
+  height:60px; 
+  width: 60px;
+  border: none;
+  background-size: 50% 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  float:left;
+  outline:none;
+}
+.play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;}
+.pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}
+#timeline{
+  width: 400px;
+  height: 20px;
+  margin-top: 20px;
+  float: left;
+  border-radius: 15px;
+  background: rgba(0,0,0,.3);
+}
+#playhead{
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    margin-top: 1px;
+    background: rgba(0, 0, 0,1);
+}
+
+/* --- AUDIO PLAYER --------------------------------------- */
+
+
+
 .stage {
-  visibility: hidden;
+  /* visibility: hidden; */
+  display: none;
 }
 #test {
   font-family: Italianno;

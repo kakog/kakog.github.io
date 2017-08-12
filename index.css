@@ -32,8 +32,8 @@ li {
 }
 input, label {display: block;}
 input {
-  width: 70%;
-  margin: 30px auto;
+  width: 100%;
+  margin: 30px -30px;
   font-size: var(--fontSize);
 }
 input[type=text] {
@@ -43,6 +43,9 @@ input[type=text] {
 }
 input ::placeholder {
   color: var(--color-2);
+}
+img {
+  width: 80%;
 }
 
 /* --- AUDIO PLAYER --------------------------------------- */
@@ -84,10 +87,7 @@ input ::placeholder {
 
 
 
-.stage {
-  /* visibility: hidden; */
-  display: none;
-}
+.stage { display: none; }
 #test {
   font-family: Italianno;
   font-size: 3rem;
@@ -99,7 +99,7 @@ input ::placeholder {
   color: grey;
   margin: 0px -50px 0px -50px;
 }
-#screenSize {display: none;}
+/* #screenSize {display: none;} */
 #screenSize p {
   margin: 0px;
 }

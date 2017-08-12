@@ -13,8 +13,11 @@ const screenSizeFunction = () => {
   // Set node style
   screenSizeDiv.style.fontSize = '100%';
 }
+const cleanInputs = () => {
+  [1,2,3,4].map( (x) => document.getElementById('checkPoint' + x).value = "")
+}
 const onLoadFunction = () => {
-  document.getElementById('checkPoint1').value = "";
+  cleanInputs();
   screenSizeFunction();
 }
 

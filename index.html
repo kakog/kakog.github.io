@@ -13,7 +13,7 @@
 
     </div>
     <p>
-      Hi nasz droga!
+      Hi nasza droga!
       <br>
       =D
       <br><br><br><br>
@@ -39,22 +39,52 @@
       <br>
     </p>
     <p>
-      <label>Type your surname below to start!</label>
+      <label>Type <del>your surname</del> 0 (zero) below to start!</label>
       <input type="text"
         id="checkPoint1"
-        placeholder="Kowalski"
+        placeholder="Write here 0"
         value=""
         onkeyup="checkPoint('checkPoint1', 0, 'stage1')"
       />
       <br><br><br><br><br><br>
     </p>
+
+
+    <!-- STAGE 1 -->
     <div id="stage1" class="stage">
-      Well done!
-      <br><br>
-      Let's continue!
+      Well done!<br><br>Let's continue!<br><br><br><br><br><br>
+      <p>
+      <label>What is the colour of the sky?</label>
+      <input type="text"
+        id="checkPoint2"
+        placeholder="Write here '1'"
+        value=""
+        onkeyup="checkPoint('checkPoint2', 1, 'stage2')"
+      />
       <br><br><br><br><br><br>
-    </div> 
-    <div id="stageXX" class="stage">
+    </p>
+
+
+    <!-- STAGE 2 -->
+    <div id="stage2" class="stage">
+      Well done!<br><br>Let's continue!<br><br><br><br><br><br>
+      <p>
+      <label>Another question!</label>
+      <input type="text"
+        id="checkPoint3"
+        placeholder="Write here 2"
+        value=""
+        onkeyup="checkPoint('checkPoint3', 2, 'stage3')"
+      />
+      <br><br><br><br><br><br>
+    </p>
+    </div>
+
+
+    <!-- STAGE 3 -->
+    <div id="stage3" class="stage">
+      <img src="img/01.jpg">
+      <p>Listen my super audio!</p>
       <audio id="music" preload="true">
         <source src="audio-test.ogg">
       </audio>
@@ -64,6 +94,8 @@
           <div id="playhead"></div>
         </div>
       </div>
+      <p>Run to the next gift!<br>It's under the bed!</p>
+      <br><br><br><br><br><br>
     </div>
     <div id="stage10" class="stage">
       Teraz będziesz w stanie poczuć się jak księżniczka nawet w najciemniejszym pomieszczeniu

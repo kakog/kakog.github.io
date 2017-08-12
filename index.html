@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css?family=Italianno&effect=3d-float" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="index.css">
   </head>
-   <body onload="myFunction()" onresize="myFunction()">
+   <body onload="onLoadFunction()" onresize="screenSizeFunction()">
     <div id="screenSize"></div>
     <div>
       
@@ -16,13 +16,11 @@
       Hi nasz droga!
       <br>
       =D
-    </p>
-    <p>
+      <br><br><br><br>
       Last year we had fun looking for your present around our house.
-      This year I want to try a better version
-    </p>
-    <p>
-      and I have decided to build this website exclusivelly to guide you ;)
+      This year there is a better version
+      <br><br>
+      this website is to guide you ;)
     </p>
     <p>
       ...
@@ -45,6 +43,7 @@
       <input type="text"
         id="checkPoint1"
         placeholder="Kowalski"
+        value=""
         onkeyup="checkPoint('checkPoint1', 0, 'stage1')"
       />
       <br><br><br><br><br><br>

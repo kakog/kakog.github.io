@@ -1,17 +1,47 @@
-// inputID: id of the input field to check
-// nextStageID: hidden block id
-// i: index of the string to type to change visibility of hidden block nextStageID to "visible"
+const screenSizeFunction = () => {
+  // Get node
+  let screenSizeDiv = document.getElementById('screenSize');
+  // Remove all childs within the node
+  while (screenSize.firstChild) {screenSize.removeChild(screenSize.firstChild);}
+  // Create new node content
+  let dims = document.createElement('p');
+  dims.appendChild(document.createTextNode("w = " + window.innerWidth + "px"));
+  dims.appendChild(document.createElement('br'));
+  dims.appendChild(document.createTextNode("h = " + window.innerHeight + "px"));
+  // Add content to the node
+  screenSizeDiv.appendChild(dims);
+  // Set node style
+  screenSizeDiv.style.fontSize = '100%';
+}
+const onLoadFunction = () => {
+  document.getElementById('checkPoint1').value = "";
+  screenSizeFunction();
+}
+
+const getDefaultStyle = (nodeName, property) => {
+    let div = document.createElement('div');
+    div.setAttribute('style','position:absolute; left:-9999px;');
+
+    let el = document.createElement(nodeName);
+    div.appendChild(el);
+    document.body.appendChild(div);
+
+    let result = getComputedStyle(el, null).getPropertyValue(property);
+    document.body.removeChild(div); 
+
+    return result;
+}
 const passArray = [0,1,2,3,4,5,6,7];
 const checkPoint = ( inputID, i, nextStageID ) => {
-  console.log('checkpoint ' + i + ' reached!');
-  
+  // inputID: id of the input field to check
+  // nextStageID: hidden block id
+  // i: index of the string to type to change visibility of hidden block nextStageID to "visible"
   if ( document.getElementById(inputID).value === passArray[i].toString() ) {
-    // document.getElementById(nextStageID).style.visibility = "visible";
-    console.log('   inputID:', inputID);
-    console.log('   i:', i);
-    console.log('   nextStageID:', nextStageID);
-    document.getElementById(nextStageID).style.display = "";
-    // location.hash = '#' + nextStageID;
+    console.log('checkpoint ' + i + ' reached!');
+    // Show next stage
+    document.getElementById(nextStageID).style.display = getDefaultStyle(document.getElementById(nextStageID).nodeName, "display");
+    // Jump to next stage
+    location.hash = '#' + nextStageID;
   }
 };
 
@@ -31,21 +61,6 @@ const checkPoint = ( inputID, i, nextStageID ) => {
 const Onscrollfnction = () => {
     alert("scroll");
 };
-const myFunction = () => {
-  // Get node
-  let screenSizeDiv = document.getElementById('screenSize')
-  // Remove all childs within the node
-  while (screenSize.firstChild) {screenSize.removeChild(screenSize.firstChild);}
-  // Create new node content
-  let dims = document.createElement('p');
-  dims.appendChild(document.createTextNode("w = " + window.innerWidth + "px"));
-  dims.appendChild(document.createElement('br'));
-  dims.appendChild(document.createTextNode("h = " + window.innerHeight + "px"));
-  // Add content to the node
-  screenSizeDiv.appendChild(dims);
-  // Set node style
-  screenSizeDiv.style.fontSize = '100%';
-}
 
 
 

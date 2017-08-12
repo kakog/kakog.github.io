@@ -26,14 +26,22 @@ body {
 }
 ul {
   padding: 0;
+  text-align: left;
 }
 li {
   list-style-type: none;
 }
+.multipleSelection {
+  background-color: var(--color-5);
+  margin: 30px;
+  padding: 35px;
+  box-shadow: 0px 0px 15px var(--color-3);
+  border-radius: 8px;
+}
 input, label {display: block;}
 input {
   width: 100%;
-  margin: 30px -30px;
+  margin: 60px -30px;
   font-size: var(--fontSize);
 }
 input[type=text] {
@@ -49,38 +57,11 @@ img {
 }
 
 /* --- AUDIO PLAYER --------------------------------------- */
-#audioplayer{
-  width: 480px;
-  height: 60px;
-  margin: 50px auto auto auto;
-  border: solid;
-}
-#pButton{
-  height:60px; 
-  width: 60px;
-  border: none;
-  background-size: 50% 50%;
-  background-repeat: no-repeat;
-  background-position: center;
-  float:left;
-  outline:none;
-}
-.play{background: url('http://www.alexkatz.me/codepen/img/play.png') ;}
-.pause{background: url('http://www.alexkatz.me/codepen/img/pause.png') ;}
-#timeline{
-  width: 400px;
-  height: 20px;
-  margin-top: 20px;
-  float: left;
-  border-radius: 15px;
-  background: rgba(0,0,0,.3);
-}
-#playhead{
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    margin-top: 1px;
-    background: rgba(0, 0, 0,1);
+
+.audioPlayer {
+  width: 80%;
+  padding: 15px;
+  background-color: #222;
 }
 
 /* --- AUDIO PLAYER --------------------------------------- */
@@ -88,18 +69,12 @@ img {
 
 
 .stage { display: none; }
-#test {
-  font-family: Italianno;
-  font-size: 3rem;
-  line-height: 2rem;
-  visibility: hidden;
-}
+#screenSize {display: none;}
 #screenSize {
   background-color: black;
   color: grey;
   margin: 0px -50px 0px -50px;
 }
-/* #screenSize {display: none;} */
 #screenSize p {
   margin: 0px;
 }

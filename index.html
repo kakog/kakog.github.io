@@ -9,8 +9,6 @@
    <body onload="onLoadFunction()" onresize="screenSizeFunction()">
     <div id="screenSize"></div>
     <div>
-      
-
     </div>
     <p>
       Hi nasza droga!
@@ -39,11 +37,10 @@
       <br>
     </p>
     <p>
-      <label>Type <del>your surname</del> 0 (zero) below to start!</label>
+      <label>Type your surname below to start!</label>
       <input type="text"
         id="checkPoint1"
-        placeholder="Write here 0"
-        value=""
+        placeholder="Kowalski"
         onkeyup="checkPoint('checkPoint1', 0, 'stage1')"
       />
       <br><br><br><br><br><br>
@@ -54,11 +51,10 @@
     <div id="stage1" class="stage">
       Well done!<br><br>Let's continue!<br><br><br><br><br><br>
       <p>
-      <label>What is the colour of the sky?</label>
+      <label>What is the name of your boyfriend?</label>
       <input type="text"
         id="checkPoint2"
-        placeholder="Write here '1'"
-        value=""
+        placeholder="Antonio"
         onkeyup="checkPoint('checkPoint2', 1, 'stage2')"
       />
       <br><br><br><br><br><br>
@@ -67,36 +63,81 @@
 
     <!-- STAGE 2 -->
     <div id="stage2" class="stage">
-      Well done!<br><br>Let's continue!<br><br><br><br><br><br>
+      Yuhuuu!<br><br>You are ready :P<br><br>Now real game!<br><br><br><br><br><br>
       <p>
-      <label>Another question!</label>
-      <input type="text"
-        id="checkPoint3"
-        placeholder="Write here 2"
-        value=""
-        onkeyup="checkPoint('checkPoint3', 2, 'stage3')"
-      />
-      <br><br><br><br><br><br>
-    </p>
+        <label>You might find your next clue in the kitchen between your plates... type the code bellow:</label>
+        <input type="text"
+          id="checkPoint3"
+          placeholder="write the code here"
+          onkeyup="checkPoint('checkPoint3', 2, 'stage3')"
+          style='text-align: center'
+        />
+        <br><br><br><br><br><br>
+      </p>
     </div>
 
 
     <!-- STAGE 3 -->
     <div id="stage3" class="stage">
-      <img src="img/01.jpg">
-      <p>Listen my super audio!</p>
-      <audio id="music" preload="true">
+      <p>&nbsp<br>Listen this audio!</p>
+      <audio preload="true" class="audioPlayer" controls="controls">
         <source src="audio-test.ogg">
       </audio>
-      <div id="audioplayer">
-        <button id="pButton" class="play"></button>
-        <div id="timeline">
-          <div id="playhead"></div>
-        </div>
-      </div>
-      <p>Run to the next gift!<br>It's under the bed!</p>
-      <br><br><br><br><br><br>
+      <br>
+      <p>
+        <label>What is the name<br>of the woman?<br></label>
+        <input type="text"
+          id="checkPoint4"
+          placeholder="Write here the name"
+          onkeyup="checkPoint('checkPoint4', 3, 'stage4')"
+        />
+        <br><br><br><br><br><br><br><br><br><br>
+      </p>
     </div>
+
+
+    <!-- STAGE 4 -->
+    <div id="stage4" class="stage">
+      <p>Well done!<br><br><br><br>Let's go for the next one...<br><br>&nbsp</p>
+      <p>Look at this picture:</p>
+      <img src="img/02.jpg">
+      <p>When was it?</p>
+      <ul>
+        <li class="multipleSelection" id="1a" onclick="multipleSelectionTest('1a')"
+        >a) 200 b.C.</li>
+        <li class="multipleSelection" id="1b" onclick="multipleSelectionTest('1b')"
+        >b) Before your graduation party</li>
+        <li class="multipleSelection" id="1c" onclick="multipleSelectionTest('1c', 'stage5')"
+        >c) After the discotheque in January last year</li>
+      </ul>
+      <p><br><br></p>
+    </div>
+
+
+    <!-- STAGE 5 -->
+    <div id="stage5" class="stage">
+      <p><br>Correct!<br><br>Here your reward<br>&nbsp</p>
+      
+      <audio preload="true" class="audioPlayer" controls="controls">
+        <source src="audio2.ogg">
+      </audio>
+      <p><br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
+      <ul>
+        <li class="multipleSelection" id="2a" onclick="multipleSelectionTest('2a','stage6')"
+        style='text-align: center;'>Click me!</li>
+      </ul>
+      <p><br><br><br><br><br><br><br><br><br></p>
+    </div>
+
+
+    <!-- STAGE 6 -->
+    <div id="stage6" class="stage">
+      This is stage 6<br>(under construction)
+      <p><br><br><br><br><br><br><br><br><br></p>
+    </div>
+
+
+    <!-- STAGE 10 -->
     <div id="stage10" class="stage">
       Teraz będziesz w stanie poczuć się jak księżniczka nawet w najciemniejszym pomieszczeniu
     </div>

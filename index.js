@@ -32,10 +32,10 @@ const onLoadFunction = () => {
 // --- QUESTIONS HANDLING -----------------------------
 
 const passArray = [
-    'Kogutowicz',
-    'David',
-    2,
-    'Conchi',
+    'Kogutowicz',   // 0
+    'David',        // 1
+    2,              // 2
+    'Conchi',       // 3
     ''
 ];
 
@@ -78,8 +78,9 @@ const checkPoint = ( inputID, i, nextStageID ) => {
 // ------ MULTIPLE SELECTION -----------------------------------
 
 const multipleSelectionTestAnswers = [
-    '1c',     // Question 1. Correct answer is C
-    '2a'      // Question 2. Correct answer is A
+    '1c',     // STAGE 4. Correct answer is C
+    '2a',     // STAGE 5. Correct answer is A
+    '3c'      // STAGE 6. Correct answer is C
 ];
 const multipleSelectionTest = (id, nextStageID) => {
     let r = multipleSelectionTestAnswers.indexOf(id);

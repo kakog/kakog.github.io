@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "C:/Users/dtg/projects/kakog.github.io/node_modules/.bin/live-server.cmd"
+    "dev": "C:/Users/%username%/projects/kakog.github.io/node_modules/.bin/live-server.cmd"
   },
   "repository": {
     "type": "git",

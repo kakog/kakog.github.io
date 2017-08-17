@@ -80,7 +80,9 @@ const checkPoint = ( inputID, i, nextStageID ) => {
 const multipleSelectionTestAnswers = [
     '1c',     // STAGE 4. Correct answer is C
     '2a',     // STAGE 5. Correct answer is A
-    '3c'      // STAGE 6. Correct answer is C
+    '3c',     // STAGE 6. Correct answer is C
+    '4a',     // STAGE 7. Correct answer is A
+    '5b'      // STAGE 8. Correct answer is B
 ];
 const multipleSelectionTest = (id, nextStageID) => {
     let r = multipleSelectionTestAnswers.indexOf(id);

@@ -69,7 +69,7 @@ img {
 
 
 .stage { display: none; }
-#screenSize {display: none;}
+#screenSize {display: none;} 
 #screenSize {
   background-color: black;
   color: grey;

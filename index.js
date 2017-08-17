@@ -40,7 +40,8 @@ const passArray = [
     'David',        // 1
     2,              // 2
     'Conchi',       // 3
-    'Pedro'         // 4
+    'Pedro',        // 4
+    'Adam'          // 5
 ];
 
 const getDefaultStyle = (nodeName, property) => {

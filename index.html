@@ -242,26 +242,23 @@
     
     <!-- STAGE 14 -->
     <div id="stage14" class="stage">
-      <p>&nbsp<br>well done! :D</p>
-      <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
-      <p>Here your next question:<br>QUESTION</p>
+      <p>&nbsp<br>well done! :D<br>&nbsp</p>
+      <p>Here your next question:</p>
+      <p style="font-size: 80%">(zoom in)</p>
       <img src="img/lis2.jpg" />
-      <ul>
-        <li class="multipleSelection" id="8a" onclick="multipleSelectionTest('8a', 'stage15')"
-        >a) </li>
-        <li class="multipleSelection" id="8b" onclick="multipleSelectionTest('8b')"
-        >b) B</li>
-        <li class="multipleSelection" id="8c" onclick="multipleSelectionTest('8c')"
-        >c) C</li>
-      </ul>
+      <input type="text"
+        id="checkPoint6"
+        placeholder="Kowalski"
+        onkeyup="checkPoint('checkPoint6', 5, 'stage15')"
+      />
     </div>
 
     <!-- STAGE 15 -->
     <div id="stage15" class="stage">
-      <img src="img/lis3.jpg" />
       <audio preload="true" class="audioPlayer" controls="controls">
-        <source src="aud/audio-test.ogg">
-      </audio>
+        <source src="aud/lis.ogg">
+        </audio>
+      <img src="img/lis3.jpg" />
       <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
       <p>&nbsp<br>And from Euskadi!</p>
       <img src="img/egiluz.jpeg" />
@@ -281,6 +278,7 @@
       <img src="img/xabi-itziar4.jpg" />
       <img src="img/xabi-itziar5.jpg" />
       <img src="img/xabi-itziar6.jpg" />
+      <p style="font-size: 200%"><br><br><br>VIDEO!<br><br><br></p>
       <video preload="true" class="videoPlayer" controls="controls">
         <source src="vid/xabi-itziar.mp4">
       </video>
@@ -304,6 +302,7 @@
       <p>
         Teraz będziesz w stanie poczuć się jak księżniczka nawet w najciemniejszym pomieszczeniu
         <br><br> <3
+        <br><br><i>David</i>
         <br><br><br><br><br><br>
       </p>
     </div>

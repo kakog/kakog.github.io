@@ -72,29 +72,10 @@
         <input type="text"
           id="checkPoint3"
           placeholder="write the code here"
-          onkeyup="checkPoint('checkPoint3', 2, 'stage3')"
+          onkeyup="checkPoint('checkPoint3', 2, 'stage4')"
           style='text-align: center'
         />
         <br><br><br><br><br><br>
-      </p>
-    </div>
-
-
-    <!-- STAGE 3 -->
-    <div id="stage3" class="stage">
-      <p>&nbsp<br>Listen this audio!</p>
-      <audio preload="true" class="audioPlayer" controls="controls">
-        <source src="audio-test.ogg">
-      </audio>
-      <br>
-      <p>
-        <label>What is the name<br>of the woman?<br></label>
-        <input type="text"
-          id="checkPoint4"
-          placeholder="Write here the name"
-          onkeyup="checkPoint('checkPoint4', 3, 'stage4')"
-        />
-        <br><br><br><br><br><br><br><br><br><br>
       </p>
     </div>
 
@@ -122,7 +103,7 @@
       <p><br>Correct!<br><br>Here your reward<br>&nbsp</p>
       
       <audio preload="true" class="audioPlayer" controls="controls">
-        <source src="audio2.ogg">
+        <source src="aud/audio-test.ogg">
       </audio>
       <p><br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
       <ul>
@@ -193,14 +174,65 @@
     <div id="stage9" class="stage">
       <p>Bingo!<br><br><br>Happy birthday! :D<br>&nbsp</p>
       <img src="img/magda.jpg" />
-      <p>UNDER CONSTRUCTION!...&nbsp</p>
+        <p><br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.</p>
+    </div>
+
+    
+    <!-- STAGE 9 -->
+    <div id="stage10" class="stage">
+      <p>&nbsp<br>Listen this audio!</p>
+      <audio preload="true" class="audioPlayer" controls="controls">
+        <source src="aud/amaES.m4a">
+      </audio>
+      <br>
+      <p>
+        <label>What is the name<br>of the woman?<br></label>
+        <input type="text"
+          id="checkPoint4"
+          placeholder="Write here the name"
+          onkeyup="checkPoint('checkPoint4', 3, 'stage11')"
+        />
+      </p>
     </div>
 
 
-    <!-- STAGE 10 -->
-    <div id="stage10" class="stage">
-      This is stage 10<br>(under construction)
+    <!-- STAGE 11 -->
+    <div id="stage11" class="stage">
+      <p>&nbsp<br>and this man?</p>
+      <audio preload="true" class="audioPlayer" controls="controls">
+        <source src="aud/aitaEU.mp4">
+      </audio>
+      <br>
+      <p>
+        <label>What is his name?<br></label>
+        <input type="text"
+          id="checkPoint5"
+          placeholder="Write here the name"
+          onkeyup="checkPoint('checkPoint5', 4, 'stage12')"
+        />
+      </p>
+    </div>
+
+    
+    <!-- STAGE 12 -->
+    <div id="stage12" class="stage">
+      <p>&nbsp<br>well done! :D</p>
+      <img src="img/aita-ama.jpg" />
+      <audio preload="true" class="audioPlayer" controls="controls">
+        <source src="aud/amaEN.m4a">
+      </audio>
+      <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
+      <ul>
+        <li class="multipleSelection" id="6a" onclick="multipleSelectionTest('6a','stage13')"
+        style='text-align: center;'>Want more?</li>
+      </ul>
       <p><br><br><br><br><br><br><br><br><br></p>
+    </div>
+    
+    <!-- STAGE 13 -->
+    <div id="stage13" class="stage">
+      <p>&nbsp<br>well done! :D</p>
+      <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
     </div>
 
 

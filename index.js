@@ -14,7 +14,11 @@ const screenSizeFunction = () => {
   screenSizeDiv.style.fontSize = '100%';
 }
 const cleanInputs = () => {
-  [1,2,3,4,5,6,7,8].map( (x) => document.getElementById('checkPoint' + x).value = "")
+  [1,2,3,4,5,6,7,8].map( (x) => {
+      if (document.getElementById('checkPoint' + x) !== null ) {
+          document.getElementById('checkPoint' + x).value = ""
+      }
+  })
 }
 const onLoadFunction = () => {
   cleanInputs();
@@ -36,7 +40,7 @@ const passArray = [
     'David',        // 1
     2,              // 2
     'Conchi',       // 3
-    ''
+    'Pedro'         // 4
 ];
 
 const getDefaultStyle = (nodeName, property) => {
@@ -82,7 +86,8 @@ const multipleSelectionTestAnswers = [
     '2a',     // STAGE 5. Correct answer is A
     '3c',     // STAGE 6. Correct answer is C
     '4a',     // STAGE 7. Correct answer is A
-    '5b'      // STAGE 8. Correct answer is B
+    '5b',     // STAGE 8. Correct answer is B
+    '6a'      // STAGE 12. Correct answer is A
 ];
 const multipleSelectionTest = (id, nextStageID) => {
     let r = multipleSelectionTestAnswers.indexOf(id);

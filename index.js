@@ -57,7 +57,7 @@ const getDefaultStyle = (nodeName, property) => {
     return result;
 }
 const unlockNextStage = ( nextStageID ) => {
-    console.log('Stage ' + nextStageID[5] + ' unlocked.');
+    console.log('Stage ' + nextStageID + ' unlocked.');
     // Show next stage
     document.getElementById(nextStageID).style.display = getDefaultStyle(document.getElementById(nextStageID).nodeName, "display");
     // Jump to next stage
@@ -87,7 +87,9 @@ const multipleSelectionTestAnswers = [
     '3c',     // STAGE 6. Correct answer is C
     '4a',     // STAGE 7. Correct answer is A
     '5b',     // STAGE 8. Correct answer is B
-    '6a'      // STAGE 12. Correct answer is A
+    '6a',     // STAGE 12. Correct answer is A
+    '7b',     // STAGE 13. Correct answer is B
+    '8a'      // STAGE 14. Correct answer is A
 ];
 const multipleSelectionTest = (id, nextStageID) => {
     let r = multipleSelectionTestAnswers.indexOf(id);

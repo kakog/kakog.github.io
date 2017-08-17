@@ -89,7 +89,7 @@ const multipleSelectionTestAnswers = [
     '5b',     // STAGE 8. Correct answer is B
     '6a',     // STAGE 12. Correct answer is A
     '7b',     // STAGE 13. Correct answer is B
-    '8a'      // STAGE 14. Correct answer is A
+    '8a',     // STAGE 14. Correct answer is A
 ];
 const multipleSelectionTest = (id, nextStageID) => {
     let r = multipleSelectionTestAnswers.indexOf(id);

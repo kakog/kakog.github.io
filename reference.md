@@ -11,5 +11,7 @@ b)
 Conchi
 Pedro
 b)
-a)
+Adam
+c)
+17
 ```

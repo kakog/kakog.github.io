@@ -73,7 +73,7 @@
           id="checkPoint3"
           placeholder="write the code here"
           onkeyup="checkPoint('checkPoint3', 2, 'stage4')"
-          style='text-align: center'
+          style="text-align: center"
         />
         <br><br><br><br><br><br>
       </p>
@@ -101,7 +101,6 @@
     <!-- STAGE 5 -->
     <div id="stage5" class="stage">
       <p><br>Correct!<br><br>Here your reward<br>&nbsp</p>
-      
       <audio preload="true" class="audioPlayer" controls="controls">
         <source src="aud/audio-test.ogg">
       </audio>
@@ -252,6 +251,9 @@
         onkeyup="checkPoint('checkPoint6', 5, 'stage15')"
       />
     </div>
+    
+
+
 
     <!-- STAGE 15 -->
     <div id="stage15" class="stage">
@@ -260,17 +262,86 @@
         </audio>
       <img src="img/lis3.jpg" />
       <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
-      <p>&nbsp<br>And from Euskadi!</p>
-      <img src="img/egiluz.jpeg" />
+      <ul>
+        <li class="multipleSelection" id="9a" onclick="multipleSelectionTest('9a','stage16')"
+        style='text-align: center;'>Want more?</li>
+      </ul>
+      <p><br><br><br><br><br><br><br><br><br></p>
+    </div>
+
+  
+    <!-- STAGE 16 -->
+    <div id="stage16" class="stage">
+      <p>&nbsp<br>from Euskadi!</p>
+      <img src="img/egiluz.jpg" />
       <audio preload="true" class="audioPlayer" controls="controls">
         <source src="aud/egiluz.ogg">
       </audio>
-
       <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
+      <ul>
+        <li class="multipleSelection" id="9a" onclick="multipleSelectionTest('9a','stage17')"
+        style='text-align: center;'>Want more?</li>
+      </ul>
+      <p><br><br><br><br><br><br><br><br><br></p>
+    </div>
+    
+      
+    <!-- STAGE 17 -->
+    <div id="stage17" class="stage">
+      <p>&nbsp<br>What is it heavier?</p>
+      <ul>
+        <li class="multipleSelection" id="10a" onclick="multipleSelectionTest('10a')">a) 100 kg of stones</li>
+        <li class="multipleSelection" id="10b" onclick="multipleSelectionTest('10b')">b) 100 kg of stones</li>
+        <li class="multipleSelection" id="10c" onclick="multipleSelectionTest('10c','stage18')">c) They are the same</li>
+      </ul>
     </div>
 
+
+    <!-- STAGE 18 -->
+    <div id="stage18" class="stage">
+      <p>uooOohhh...<br><br>check this out!</p>
+      <video preload="true" class="videoPlayer" controls="controls">
+        <source src="vid/przemek.mp4a">
+      </video>
+      <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
+      <ul>
+        <li class="multipleSelection" id="11a" onclick="multipleSelectionTest('11a','stage19')"
+        style='text-align: center;'>Want more?</li>
+      </ul>
+      <p><br><br><br><br><br><br><br><br><br></p>
+    </div>
+    
+    
+    <!-- STAGE 19 -->
+    <div id="stage19" class="stage">
+      <p>This one will be tricky...</p>
+      <p>How many cushions are in the living room?</p>
+      <input type="text"
+        id="checkPoint7"
+        placeholder="12"
+        style="text-align: center"
+        onkeyup="checkPoint('checkPoint7', 6, 'stage20')"
+      />
+      <p><br><br><br><br><br><br><br><br><br></p>
+    </div>
+    
+    
     <!-- STAGE 20 -->
     <div id="stage20" class="stage">
+      <p>Cool!</p>
+      <img src="img/karina-freddy.jpg" />
+      <p>There is something waiting you in the kitchen...<br><br>Maybe inside Karina and Freddy's veggie-boxes? :P</p>
+      <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
+      <ul>
+        <li class="multipleSelection" id="12a" onclick="multipleSelectionTest('12a','stage21')"
+        style='text-align: center;'>There is a bit more</li>
+      </ul>
+      <p><br><br><br><br><br><br><br><br><br></p>
+    </div>
+
+
+    <!-- STAGE 21 -->
+    <div id="stage21" class="stage">
       <p>&nbsp<br>And from Leioa!</p>
       <img src="img/xabi-itziar1.jpg" />
       <img src="img/xabi-itziar2.jpg" />
@@ -284,6 +355,11 @@
       </video>
 
       <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
+      <ul>
+        <li class="multipleSelection" id="13a" onclick="multipleSelectionTest('13a','stage100')"
+        style='text-align: center;'>And to finish...</li>
+      </ul>
+      <p><br><br><br><br><br><br><br><br><br></p>
     </div>
 
 
@@ -302,6 +378,7 @@
       <p>
         Teraz będziesz w stanie poczuć się jak księżniczka nawet w najciemniejszym pomieszczeniu
         <br><br> <3
+        <br><br> happy birthday kochanie
         <br><br><i>David</i>
         <br><br><br><br><br><br>
       </p>

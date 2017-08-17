@@ -41,7 +41,8 @@ const passArray = [
     2,              // 2
     'Conchi',       // 3
     'Pedro',        // 4
-    'Adam'          // 5
+    'Adam',         // 5
+    17,             // 6
 ];
 
 const getDefaultStyle = (nodeName, property) => {
@@ -91,6 +92,11 @@ const multipleSelectionTestAnswers = [
     '6a',     // STAGE 12. Correct answer is A
     '7b',     // STAGE 13. Correct answer is B
     '8a',     // STAGE 14. Correct answer is A
+    '9a',     // STAGE 16. Correct answer is A
+    '10c',    // STAGE 17. Correct answer is C
+    '11a',    // STAGE 18. Correct answer is A
+    '12a',    // STAGE 20. Correct answer is A
+    '13a'     // STAGE 21. Correct answer is A
 ];
 const multipleSelectionTest = (id, nextStageID) => {
     let r = multipleSelectionTestAnswers.indexOf(id);

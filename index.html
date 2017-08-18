@@ -66,8 +66,9 @@
 
     <!-- STAGE 2 -->
     <div id="stage2" class="stage">
-      Yuhuuu!<br><br>You are ready :P<br><br>Now real game!<br><br><br><br><br><br>
+      Yuhuuu!<br><br>You are ready :P<br><br>Now real game!<br><br><br><br>
       <p>
+        <img class="mapIcon" src="img/map.svg" />
         <label>You might find your next clue in the kitchen between your plates... type the code bellow:</label>
         <input type="text"
           id="checkPoint3"
@@ -101,9 +102,12 @@
     <!-- STAGE 5 -->
     <div id="stage5" class="stage">
       <p><br>Correct!<br><br>Here your reward<br>&nbsp</p>
-      <audio preload="true" class="audioPlayer" controls="controls">
-        <source src="aud/audio-test.ogg">
-      </audio>
+      <video preload="true" class="videoPlayer" controls="controls">
+        <source src="vid/marta-tomek-1.mp4">
+      </video>
+      <video preload="true" class="videoPlayer" controls="controls">
+        <source src="vid/marta-tomek-2.mp4">
+      </video>
       <p><br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
       <ul>
         <li class="multipleSelection" id="2a" onclick="multipleSelectionTest('2a','stage6')"
@@ -141,6 +145,7 @@
     <div id="stage7" class="stage">
       <p>Great!<br><br><br>This just married couple has a something for you...<br>&nbsp</p>
       <img src="img/darek-natalia.jpg" />
+      <img class="mapIcon" src="img/map.svg" style="margin-top: 120px;"/>
       <p>check behind the sofa!...&nbsp</p>
       <p><br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
       <ul>
@@ -155,7 +160,7 @@
     <div id="stage8" class="stage">
       <p>And<br><br><br>here is a second riddle for you...<br>&nbsp</p>
       <p style="font-size: 80%">
-        <i>Take off my skin and I won't cry, but you will... What am I?</i>
+        <i>Take off my skin and I won't cry,<br>but you will... What am I?</i>
       </p>
       <p>What am I?</p>
       <ul>
@@ -261,6 +266,8 @@
         <source src="aud/lis.ogg">
         </audio>
       <img src="img/lis3.jpg" />
+      <img class="mapIcon" src="img/map.svg" style="margin-top: 120px;"/>
+      <p>Maybe you should check David's car...</p>
       <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
       <ul>
         <li class="multipleSelection" id="9a" onclick="multipleSelectionTest('9a','stage16')"
@@ -301,7 +308,7 @@
     <div id="stage18" class="stage">
       <p>uooOohhh...<br><br>check this out!</p>
       <video preload="true" class="videoPlayer" controls="controls">
-        <source src="vid/przemek.mp4a">
+        <source src="vid/przemek.mp4">
       </video>
       <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
       <ul>
@@ -330,7 +337,9 @@
     <div id="stage20" class="stage">
       <p>Cool!</p>
       <img src="img/karina-freddy.jpg" />
-      <p>There is something waiting you in the kitchen...<br><br>Maybe inside Karina and Freddy's veggie-boxes? :P</p>
+      <p>There is something waiting you in the kitchen...</p>
+      <img class="mapIcon" src="img/map.svg"/>
+      <p>Maybe inside Karina and Freddy's veggie-boxes? :P</p>
       <p>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br>.<br><br>&nbsp</p>
       <ul>
         <li class="multipleSelection" id="12a" onclick="multipleSelectionTest('12a','stage21')"
@@ -365,6 +374,7 @@
 
     <!-- STAGE 100 -->
     <div id="stage100" class="stage">
+      <img class="mapIcon" src="img/map.svg" style="margin-top: 120px;"/>
       <p>
         check below your bed!
         <ul><li class="multipleSelection" onclick="unlockNextStage('stage101')" style="text-align: center">Click when found</li></ul>
